@@ -1,0 +1,6 @@
+app.post('/renvoyer',(req, res) => {
+        var child_process = require('child_process');
+        child_process.exec('C:/Exemple1/exec.bat', function(error, stdout, stderr) {
+        console.log(stdout);
+});
+    })
